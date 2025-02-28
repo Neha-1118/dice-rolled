@@ -68,7 +68,7 @@
     <div class="container">
         <h2>🎲 Roll the Dice 🎲</h2>
         <div class="dice">
-            <img id="diceImage" src="dice img.webp" alt="Dice">
+            <img id="diceImage" src="dice1.png" alt="Dice">
         </div>
         <button onclick="rollDice()">Roll Dice</button>
         <p id="diceResult">Click the button to roll!</p>
@@ -76,7 +76,7 @@
     <script>
         function rollDice() {
             let diceValue = Math.floor(Math.random() * 6) + 1;
-            document.getElementById("diceImage").src = `https://upload.wikimedia.org/wikipedia/commons/${diceValue}/6d/dice${diceValue}.svg`;
+            document.getElementById("diceImage").src = `dice${diceValue}.png`; 
             document.getElementById("diceResult").innerText = `You rolled a ${diceValue}!`;
         }
     </script>
